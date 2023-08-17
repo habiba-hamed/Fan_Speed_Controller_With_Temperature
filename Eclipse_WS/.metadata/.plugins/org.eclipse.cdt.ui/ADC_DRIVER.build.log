@@ -1,0 +1,11 @@
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+??:??:?? Build Failed. 2 errors, 0 warnings. (took 705ms)
+

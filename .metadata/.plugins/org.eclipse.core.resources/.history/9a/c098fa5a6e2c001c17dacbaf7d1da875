@@ -1,0 +1,53 @@
+/*******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: DC_motor.c
+ *
+ * Description: Source file for the DC Motor
+ *
+ * Created on: 12þ/10þ/2021
+ *
+ * Author: Habiba Hamed
+ *
+ ********************************************************************************/
+#include "GPIO.h"
+#include "DC_motor.h"
+#include <avr/io.h>
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+void DcMotor_Init(void){
+	/*Configure the chosen 2 pins to connect the DC-Motor to as output pins */
+
+	GPIO_setupPinDirection(SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,PIN_OUTPUT);
+	GPIO_setupPinDiretion(SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,PIN_OUTPUT);
+
+	/* Stop at the DC-Motor at the beginning by clear the chosen 2 pins */
+
+	GPIO_writePin(SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,LOGIC_LOW);
+	GPIO_writePin(SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,LOGIC_LOW);
+
+}
+void DcMotor_Rotate(DcMotor_State state,uint8 speed){
+	/* configure the rotation of motor*/
+	switch(state)
+	{
+	case STOP:
+		GPIO_writePin(SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,LOGIC_LOW);
+		GPIO_writePin(SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,LOGIC_LOW);
+		break;
+	case CLOCKWISE:
+		GPIO_writePin(SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,LOGIC_HIGH);
+		GPIO_writePin(SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,LOGIC_LOW);
+		break;
+	case ANTI_CLOCKWISE:
+		GPIO_writePin(SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,LOGIC_LOW);
+		GPIO_writePin(SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,LOGIC_HIGH);
+		break;
+	}
+	/* configure the speed of motor */
+	PWM_Timer0_Start(speed);
+}

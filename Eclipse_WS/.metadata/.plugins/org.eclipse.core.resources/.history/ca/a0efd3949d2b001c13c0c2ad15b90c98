@@ -1,0 +1,31 @@
+/************************************************************************************
+ *
+ * Module: ADC
+ *
+ *File Name: ADC_DRIVER.c
+ *
+ *Description: Source file for the ATmega16 ADC driver
+ *
+ *Created on: 12þ/10/2021
+ *
+ *Author: Habiba Hamed
+ *
+ ************************************************************************************/
+
+#include <avr/io.h> /* to use ADC registers*/
+#include "ADC_DRIVER.h"
+#include "common_macros.h"
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+
+void ADC_init(const ADC_ConfigType* Config_Ptr){
+
+}
+uint16 ADC_readChannel(uint8 channel_num){
+
+}
+
+

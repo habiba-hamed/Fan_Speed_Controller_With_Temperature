@@ -1,0 +1,36 @@
+/*******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: DC_motor.h
+ *
+ * Description: Header file for the DC Motor
+ *
+ * Created on: 12þ/10þ/2021
+ *
+ * Author: Habiba Hamed
+ *
+ ********************************************************************************/
+
+#ifndef DC_MOTOR_H_
+#define DC_MOTOR_H_
+#define FIRST_SELECTED_PIN_NUM PC0
+#define FIRST_SELECTED_PORT_NUM PORTC
+#define SECOND_SELECTED_PIN_NUM PC1
+#define SECOND_SELECTED_PORT_NUM PORTC
+
+#include "std_Types.h"
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+
+/*
+ * Description : Function to initialize the DC Motor driver
+ * 	1. setup the direction for the two motor pins.
+ * 	2. Stop at the DC-Motor at the beginning.
+ */
+
+void DcMotor_Init(void);
+
+#endif /* DC_MOTOR_H_ */

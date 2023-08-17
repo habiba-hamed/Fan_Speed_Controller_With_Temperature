@@ -1,0 +1,35 @@
+/*******************************************************************************
+ *
+ * Module: DC Motor
+ *
+ * File Name: DC_motor.c
+ *
+ * Description: Source file for the DC Motor
+ *
+ * Created on: 12þ/10þ/2021
+ *
+ * Author: Habiba Hamed
+ *
+ ********************************************************************************/
+#include "GPIO.h"
+#include "DC_motor.h"
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+void DcMotor_Init(void){
+	/*Configure the choosen 2 pins to connect the DC-Motor to as output pins */
+
+	GPIO_setupPinDirection(FIRST_SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,PIN_OUTPUT);
+	GPIO_setupPinDiretion(SECOND_SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,PIN_OUTPUT);
+
+	/* Stop at the DC-Motor at the beginning by clear the choosen 2 pins */
+
+	GPIO_writePin(FIRST_SELECTED_PORT_NUM,FIRST_SELECTED_PIN_NUM,LOGIC_LOW);
+	GPIO_writePin(SECOND_SELECTED_PORT_NUM,SECOND_SELECTED_PIN_NUM,LOGIC_LOW);
+
+}
+void DcMotor_Rotate(DcMotor_State state,uint8 speed){
+
+}

@@ -1,0 +1,16 @@
+/*******************************************************************************
+ *
+ * Module: Sensor
+ *
+ * File Name: sensor.c
+ *
+ * Description: Source file for the LM35 sensor
+ *
+ * Created on: 12þ/10þ/2021
+ *
+ * Author: Habiba Hamed
+ *
+ ********************************************************************************/
+#include "ADC_DRIVER.h"
+#include "sensor.h"
+

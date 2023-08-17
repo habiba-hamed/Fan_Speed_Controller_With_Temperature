@@ -1,0 +1,424 @@
+??:??:?? **** Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+../ADC_DRIVER.c: In function 'ADC_readChannel':
+../ADC_DRIVER.c:27: warning: control reaches end of non-void function
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+../ADC_DRIVER.c: In function 'ADC_readChannel':
+../ADC_DRIVER.c:29: warning: control reaches end of non-void function
+Finished building: ../ADC_DRIVER.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../ADC_DRIVER1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER1.d" -MT"ADC_DRIVER1.o" -c -o "ADC_DRIVER1.o" "../ADC_DRIVER1.c"
+Finished building: ../ADC_DRIVER1.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./ADC_DRIVER1.o ./gpio.o ./lcd.o   
+./ADC_DRIVER1.o: In function `ADC_init':
+../ADC_DRIVER1.c:24: multiple definition of `ADC_init'
+./ADC_DRIVER.o:../ADC_DRIVER.c:24: first defined here
+./ADC_DRIVER1.o: In function `ADC_init':
+../ADC_DRIVER1.c:24: multiple definition of `ADC_readChannel'
+./ADC_DRIVER.o:../ADC_DRIVER.c:24: first defined here
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER1.d" -MT"ADC_DRIVER1.o" -c -o "ADC_DRIVER1.o" "../ADC_DRIVER1.c"
+Finished building: ../ADC_DRIVER1.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER1.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project ADC_DRIVER ****
+make all 
+Building target: ADC_DRIVER.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_DRIVER.map -mmcu=atmega16 -o "ADC_DRIVER.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC_DRIVER.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Clean-only build of configuration Debug for project MINI_PROJECT_3 ****
+make clean 
+rm -rf  ./ADC_DRIVER.o ./gpio.o ./lcd.o  sizedummy  ADC_DRIVER.lss  ./ADC_DRIVER.d ./gpio.d ./lcd.d  ADC_DRIVER.elf
+ 
+??:??:?? **** Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: MINI_PROJECT_3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MINI_PROJECT_3.map -mmcu=atmega16 -o "MINI_PROJECT_3.elf"  ./ADC_DRIVER.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [MINI_PROJECT_3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application.d" -MT"application.o" -c -o "application.o" "../application.c"
+Finished building: ../application.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: MINI_PROJECT_3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MINI_PROJECT_3.map -mmcu=atmega16 -o "MINI_PROJECT_3.elf"  ./ADC_DRIVER.o ./application.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [MINI_PROJECT_3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Building file: ../application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application.d" -MT"application.o" -c -o "application.o" "../application.c"
+../application.c: In function 'main':
+../application.c:19: warning: parameter names (without types) in function declaration
+../application.c:18: warning: unused variable 'Config_ptr'
+Finished building: ../application.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_sendCommand':
+../lcd.c:62: warning: unused variable 'lcd_port_value'
+../lcd.c: In function 'LCD_displayCharacter':
+../lcd.c:112: warning: unused variable 'lcd_port_value'
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:222: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: MINI_PROJECT_3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MINI_PROJECT_3.map -mmcu=atmega16 -o "MINI_PROJECT_3.elf"  ./ADC_DRIVER.o ./application.o ./gpio.o ./lcd.o   
+Finished building target: MINI_PROJECT_3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MINI_PROJECT_3.elf  >"MINI_PROJECT_3.lss"
+Finished building: MINI_PROJECT_3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MINI_PROJECT_3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7488 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MINI_PROJECT_3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7488 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MINI_PROJECT_3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7488 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MINI_PROJECT_3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7488 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../DC_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_motor.d" -MT"DC_motor.o" -c -o "DC_motor.o" "../DC_motor.c"
+../DC_motor.c: In function 'DcMotor_Init':
+../DC_motor.c:23: error: 'PORTC' undeclared (first use in this function)
+../DC_motor.c:23: error: (Each undeclared identifier is reported only once
+../DC_motor.c:23: error: for each function it appears in.)
+../DC_motor.c:23: error: 'PC0' undeclared (first use in this function)
+../DC_motor.c:23: error: 'OUTPUT_PIN' undeclared (first use in this function)
+make: *** [DC_motor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

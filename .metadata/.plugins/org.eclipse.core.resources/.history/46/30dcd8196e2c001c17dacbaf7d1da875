@@ -1,0 +1,23 @@
+/************************************************************************************
+ *
+ *Module: application
+ *
+ *File Name: application.c
+ *
+ *Description: Source file for the application
+ *
+ *Created on: 12þ/10/2021
+ *
+ *Author: Habiba Hamed
+ *
+ ************************************************************************************/
+#include "ADC_DRIVER.h"
+#include "lcd.h"
+ int main(){
+	 ADC_ConfigType chosen={Internal,F_CPU_8};
+	 ADC_ConfigType * Config_ptr=&chosen;
+	 void ADC_init(Config_ptr);
+	 void LCD_init();
+
+ }
+

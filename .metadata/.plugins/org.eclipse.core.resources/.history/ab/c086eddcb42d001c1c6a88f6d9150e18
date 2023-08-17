@@ -1,0 +1,90 @@
+/************************************************************************************
+ *
+ *Module: application
+ *
+ *File Name: application.c
+ *
+ *Description: Source file for the application
+ *
+ *Created on: 12þ/10/2021
+ *
+ *Author: Habiba Hamed
+ *
+ ************************************************************************************/
+
+#include "lcd.h"
+#include "lm35_sensor.h"
+#include "DC_motor.h"
+#include "ADC_DRIVER.h"
+
+ int main(){
+	 DcMotor_Init();
+	 ADC_ConfigType chosen={Internal,F_CPU_8};
+	 ADC_ConfigType * Config_ptr=&chosen;
+	 ADC_init(Config_ptr);
+	 LCD_init();
+	 uint8 temperature =0, previous_temperature;
+	 while (1){
+		 temperature=LM35_getTemperature();
+		 if(temperature!=previous_temperature)
+		 {
+			 if (temperature >= 120){
+				 LCD_clearScreen();
+				 DcMotor_Rotate(CLOCKWISE,100);
+				 LCD_moveCursor(0,3);
+				 LCD_displayString("FAN IS ON");
+				 LCD_moveCursor(1,3);
+				 LCD_displayString("temp = ");
+				 LCD_intgerToString(temperature);
+				 LCD_displayString(" C");
+
+			 }
+			 else if (temperature >= 90){
+
+				 LCD_clearScreen();
+				 DcMotor_Rotate(CLOCKWISE,100);
+				 LCD_moveCursor(0,3);
+				 LCD_displayString("FAN IS ON");
+				 LCD_moveCursor(1,3);
+				 LCD_displayString("temp = ");
+				 LCD_intgerToString(temperature);
+				 LCD_displayString(" C");
+			 }
+			 else if (temperature >= 60){
+				 LCD_clearScreen();
+				 DcMotor_Rotate(CLOCKWISE,50);
+				 LCD_moveCursor(0,3);
+				 LCD_displayString("FAN IS ON");
+				 LCD_moveCursor(1,3);
+				 LCD_displayString("temp = ");
+				 LCD_intgerToString(temperature);
+				 LCD_displayString(" C");
+
+			 }
+			 else if (temperature >= 30){
+				 LCD_clearScreen();
+				 DcMotor_Rotate(CLOCKWISE,25);
+				 LCD_moveCursor(0,3);
+				 LCD_displayString("FAN IS ON");
+				 LCD_moveCursor(1,3);
+				 LCD_displayString("temp = ");
+				 LCD_intgerToString(temperature);
+				 LCD_displayString(" C");
+
+			 }
+			 else
+			 {
+				 LCD_clearScreen();
+				 DcMotor_Rotate(STOP,0);
+				 LCD_moveCursor(0,3);
+				 LCD_displayString("FAN IS OFF");
+				 LCD_moveCursor(1,3);
+				 LCD_displayString("temp = ");
+				 LCD_intgerToString(temperature);
+				 LCD_displayString(" C");
+			 }
+			 previous_temperature=temperature;
+		 }
+	 }
+ }
+

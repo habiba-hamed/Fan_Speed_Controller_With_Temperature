@@ -1,0 +1,39 @@
+/************************************************************************************
+ *
+ * Module: ADC
+ *
+ *File Name: ADC_DRIVER.c
+ *
+ *Description: Source file for the ATmega16 ADC driver
+ *
+ *Created on: 12þ/10/2021
+ *
+ *Author: Habiba Hamed
+ *
+ ************************************************************************************/
+
+#include <avr/io.h> /* to use ADC registers*/
+#include "ADC_DRIVER.h"
+#include "common_macros.h"
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+
+void ADC_init(const ADC_ConfigType* Config_Ptr){
+	/* ADMUX Register Bits Description:
+		 * ADLAR   = 0 right adjusted
+		 * MUX4:0  = 00000 to choose channel 0 as initialization
+		 */
+	ADMUX=0;
+	ADMUX=(ADMUX & 0x3F) | ((config_Ptr->ref_volt)<<6)
+
+}
+
+uint16 ADC_readChannel(uint8 channel_num){
+
+return ADC;
+}
+
+

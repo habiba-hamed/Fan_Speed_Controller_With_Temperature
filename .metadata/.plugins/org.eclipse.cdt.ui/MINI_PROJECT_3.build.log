@@ -1,0 +1,54 @@
+??:??:?? **** Incremental Build of configuration Debug for project MINI_PROJECT_3 ****
+make all 
+Building file: ../ADC_DRIVER.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER.d" -MT"ADC_DRIVER.o" -c -o "ADC_DRIVER.o" "../ADC_DRIVER.c"
+Finished building: ../ADC_DRIVER.c
+ 
+Building file: ../DC_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DC_motor.d" -MT"DC_motor.o" -c -o "DC_motor.o" "../DC_motor.c"
+Finished building: ../DC_motor.c
+ 
+Building file: ../application.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"application.d" -MT"application.o" -c -o "application.o" "../application.c"
+Finished building: ../application.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: MINI_PROJECT_3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MINI_PROJECT_3.map -mmcu=atmega16 -o "MINI_PROJECT_3.elf"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./ADC_DRIVER.o ./DC_motor.o ./application.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: MINI_PROJECT_3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MINI_PROJECT_3.elf  >"MINI_PROJECT_3.lss"
+Finished building: MINI_PROJECT_3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 MINI_PROJECT_3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9312 bytes (56.8% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (28.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+??:??:?? Build Finished. 0 errors, 0 warnings. (took 4s.43ms)
+
